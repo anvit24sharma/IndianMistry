@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Relative_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.indianmistry.otp">
+
+    <EditText
+        android:id="@+id/phoneno"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:background="@drawable/edit_text_box"
+        android:ems="10"
+        android:hint="Mobile No."
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textSize="30sp"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteY="55dp"
+        tools:layout_editor_absoluteX="17dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp" />
+
+    <Button
+        android:id="@+id/getotp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate OTP"
+        android:textSize="30sp"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteY="155dp"
+        tools:layout_editor_absoluteX="74dp"
+        android:layout_alignBottom="@+id/resend"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="71dp" />
+
+    <EditText
+        android:id="@+id/enterotp"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:background="@drawable/edit_text_box"
+        android:ems="10"
+        android:padding="10dp"
+        android:hint="Enter OTP"
+        android:inputType="number"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteY="309dp"
+        tools:layout_editor_absoluteX="67dp"
+        android:layout_above="@+id/submit"
+        android:layout_alignStart="@+id/getotp"
+        android:layout_marginBottom="27dp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:onClick="verifyCode"
+        android:text="SUBMIT"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteY="404dp"
+        tools:layout_editor_absoluteX="117dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp" />
+
+    <Button
+        android:id="@+id/resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resend OTP"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteY="231dp"
+        tools:layout_editor_absoluteX="126dp"
+        tools:ignore="HardcodedText,MissingConstraints"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

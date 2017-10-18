@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.dell.indianmistry.logged_in_user"
+    tools:showIn="@layout/app_bar_logged_in_user">
+
+    <TextView
+        android:id="@+id/services"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="Services"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/electrician"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/services"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="96dp"
+        android:text="Electrician"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/plumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_toEndOf="@+id/electrician"
+        android:text="Plumber"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/electrician"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/carservice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"
+        android:text="Car Service"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/electrician"
+        android:layout_alignStart="@+id/electrician"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/bikeservice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bike Service"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/carservice"
+        android:layout_alignBottom="@+id/carservice"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="19dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/cleaning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/carservice"
+        android:layout_below="@+id/carservice"
+        android:layout_marginTop="71dp"
+        android:text="Cleaning"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/acfridgeother"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AC Fridge Others"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/cleaning"
+        android:layout_alignParentEnd="true"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/photograper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Photographer"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="27dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/djbooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DJ Booking"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/photograper"
+        android:layout_alignBottom="@+id/photograper"
+        android:layout_alignStart="@+id/bikeservice"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/plumber"
+        android:layout_alignEnd="@+id/cleaning"
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="25dp"
+        app:srcCompat="@drawable/electrician"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/services"
+        app:srcCompat="@drawable/plumber"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView3"
+        android:layout_below="@+id/electrician"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/car_service"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_alignTop="@+id/imageView5"
+        app:srcCompat="@drawable/bike_service"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/acfridgeother"
+        android:layout_alignEnd="@+id/imageView5"
+        android:layout_marginBottom="17dp"
+        app:srcCompat="@drawable/cleaning"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView7"
+        android:layout_alignEnd="@+id/imageView6"
+        app:srcCompat="@drawable/others"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView7"
+        android:layout_below="@+id/cleaning"
+        android:layout_marginTop="14dp"
+        app:srcCompat="@drawable/photographer"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView8"
+        android:layout_alignTop="@+id/imageView9"
+        app:srcCompat="@drawable/djbooking"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.indianmistry.service">
+
+    <TextView
+        android:id="@+id/name_of_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="TextView"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="26dp"
+        android:paddingTop="10dp"
+        app:srcCompat="@drawable/ic_services"
+        tools:ignore="ContentDescription"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/schedule_service"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:text="Schedule Service"
+        android:textSize="22sp"
+        tools:ignore="HardcodedText"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/book_service_now"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:text="Book Service now >>>"
+        android:textSize="28sp"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_person"
+            android:title="Profile" />
+        <item
+            android:id="@+id/bookings"
+            android:icon="@drawable/ic_bookings"
+            android:title="Bookings" />
+        <item
+            android:id="@+id/book_services"
+            android:icon="@drawable/ic_services"
+            android:title="Book Services" />
+        <item
+            android:id="@+id/wallet"
+            android:icon="@drawable/ic_wallet"
+            android:title="Paytm Wallet" />
+
+        <item
+            android:id="@+id/invite_earn"
+            android:icon="@drawable/ic_refer_earn"
+            android:title="Invite and Earn" />
+
+        <item
+            android:id="@+id/call_us"
+            android:icon="@drawable/ic_call"
+            android:title="Contact us" />
+        <item
+            android:id="@+id/rate"
+            android:icon="@drawable/ic_rate"
+            android:title="Rate" />
+
+        <item
+            android:id="@+id/privacy"
+            android:icon="@drawable/ic_privacy"
+            android:title="Privacy" />
+        <item
+            android:id="@+id/tnc"
+            android:icon="@drawable/ic_tnc"
+            android:title="Terms n Conditions" />
+
+
+    </group>
+
+
+</menu>

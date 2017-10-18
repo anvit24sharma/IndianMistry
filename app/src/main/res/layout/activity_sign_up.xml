@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relative_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.indianmistry.SignUp">
+
+    <EditText
+        android:id="@+id/sign_up_email"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/edit_text_box"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/sign_up_password"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/sign_up_email"
+        android:layout_below="@+id/sign_up_email"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_text_box"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/sign_up_phoneno"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edit_text_box"
+        android:padding="10dp"
+        android:ems="10"
+        android:hint="Phone NO."
+        android:inputType="phone"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/sign_up_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp" />
+
+    <Button
+        android:id="@+id/Verify"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="63dp"
+        android:background="@android:color/holo_green_light"
+        android:text="Verify"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>

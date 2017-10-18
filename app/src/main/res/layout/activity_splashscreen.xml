@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    tools:context="com.example.dell.indianmistry.splashscreen">
+
+
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INDIAN MISTRY"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="24sp"
+        android:layout_marginBottom="18dp"
+        tools:ignore="HardcodedText"
+        android:layout_above="@+id/IB"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/IB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instant Booking"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:layout_above="@+id/hfs"
+        android:layout_alignEnd="@+id/app_name"
+        android:layout_marginBottom="12dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/hfs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hassel Free Service"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/pwp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hfs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Pay with Paytm"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/ays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="All Your Services"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/pwp"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/jcw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Just a Click Away"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/ays"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/pfc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:text="All Services At Pocket Friendly Cost"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        app:srcCompat="@drawable/services" />
+
+</RelativeLayout>

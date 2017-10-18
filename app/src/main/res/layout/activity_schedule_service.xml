@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.dell.indianmistry.schedule_service">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/thankyou_textview"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="19dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/thankyou_textview">
+    <EditText
+        android:id="@+id/problem_desc"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/edit_text_box"
+        android:hint="Problem Description"
+        android:inputType="textMultiLine"
+        android:maxHeight="140dp"
+        android:padding="10dp"
+        android:saveEnabled="true"
+        android:scrollbars="vertical"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        tools:ignore="HardcodedText"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="69dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_box"
+        android:ems="10"
+        android:hint="Date "
+        android:inputType="date"
+        android:padding="10dp"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="203dp"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/problem_desc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp" />
+
+    <EditText
+        android:id="@+id/timing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_box"
+        android:ems="10"
+        android:hint="Timing"
+        android:inputType="time"
+        android:padding="10dp"
+        tools:ignore="HardcodedText"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/date"
+        android:layout_alignStart="@+id/date" />
+    </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/thankyou_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="Thank you"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/saved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="21dp"
+        android:layout_marginTop="12dp"
+        app:srcCompat="@android:drawable/ic_menu_save" />
+</RelativeLayout>
